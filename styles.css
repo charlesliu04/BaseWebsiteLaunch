@@ -457,3 +457,22 @@ html, body {
   font-size: 20px;
 }
 
+/* Mobile-specific styles */
+@media only screen and (max-width: 600px) {
+  #popup-container {
+    width: 100%; /* Make popup full-width on small screens */
+    padding: 10px; /* Reduce padding on smaller screens */
+    box-sizing: border-box; /* Include padding in width */
+  }
+  
+  #popup-content {
+    max-width: 100%; /* Allow content to fill the container on small screens */
+    font-size: 16px; /* Increase font size for readability */
+  }
+  
+  #close-popup {
+    top: 15px; /* Reposition close button for easy access */
+    right: 15px;
+    font-size: 30px; /* Increase size for easy tapping */
+  }
+}
