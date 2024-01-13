@@ -232,18 +232,9 @@
 
 
 body, html {
-  height: 100%; 
-
-
-@media only screen and (min-width: 768px) { 
-  body, html {
-    overflow-y: hidden;\
-    height: 100vh; 
-  }
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  height: 100vh; /* Set the height to the full viewport height */
 }
-
-
-
 
 
 /*Cursor Blink Introduction Animation */
