@@ -22,24 +22,24 @@ const typed = new Typed('#typed-text', {
   typeSpeed: 30,
   startDelay: 700, 
   loop: false,
-  showCursor: true, 
-  cursorChar: '|',
+  showCursor: true, // Make sure the cursor is shown
+  cursorChar: '|', // Customize the cursor character if desired
   onComplete: (self) => {
-   
+    // Keep the cursor blinking after typing is finished and before the next phase of the animation
     setTimeout(() => {
-      
+      // Hide the cursor after the pause and before moving the text up
       self.cursor.style.display = 'none';
 
-      
+      // After typing is complete and pause is done, move the text up
       const introDiv = document.getElementById('animated-intro');
       introDiv.style.animation = 'moveUp 1s forwards';
 
-   
+      // When the move-up animation is complete, fade out the black overlay and show main content
       introDiv.addEventListener('animationend', () => {
         const overlay = document.getElementById('fullscreen-overlay');
         overlay.style.animation = 'fadeOut 1s forwards';
 
-       
+        // Wait for the fade-out to complete before showing the content
         overlay.addEventListener('animationend', () => {
           document.getElementById('main-content').style.display = 'block';
         });
@@ -51,17 +51,18 @@ const typed = new Typed('#typed-text', {
 
 
 
-//Dropdown screen code
+
+//This is the drop down screen code 
 
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.menu-word, .menu-word1, .menu-word2, .menu-word3').forEach(item => {
     item.addEventListener('click', event => {
       event.preventDefault();
 
-
+      // Determine the content for the pop-up based on the clicked item
       const popupContent = determinePopupContent(item);
       document.getElementById('popup-content').innerHTML = popupContent;
-      showPopup(); 
+      showPopup(); // Call the function to show the popup
     });
   });
 
@@ -72,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Close Pop-Up with Escape key
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
-    closePopup(); 
+    closePopup(); // Call the function to close the popup
   }
 });
 
@@ -81,7 +82,7 @@ document.addEventListener('keydown', (event) => {
 // Function to show the popup
 function showPopup() {
   const popup = document.getElementById('popup-container');
-  const popupContent = document.querySelector('.popup-content'); 
+  const popupContent = document.querySelector('.popup-content'); // changed from getElementById
   popup.classList.add('visible');
 }
 
@@ -136,5 +137,8 @@ function determinePopupContent(clickedItem) {
 }
 return content;
 }
+
+   
+
 
    
