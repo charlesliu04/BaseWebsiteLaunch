@@ -103,7 +103,7 @@ function determinePopupContent(clickedItem) {
     case 'economics':
       content = '<p style="font-size: 18px;">Economics captivates me particularly for its blend of scientific rigor and psychological insight. It goes beyond numbers and graphs, delving into how human behavior, influenced by psychological biases and emotions, shapes economic decisions. This fusion offers a comprehensive view of how individual choices and societal trends intertwine. By integrating traditional economic analysis with the nuances of human psychology, it provides a unique lens to understand and predict the dynamic interplay of market forces, policy impacts, and cultural shifts. This multidisciplinary approach makes economics not just a study of markets but a profound exploration of human nature and societal evolution.</p>'
       + '<figure>'
-      + '<img src="https://mail.google.com/mail/u/0?ui=2&ik=260c5ed639&attid=0.1&permmsgid=msg-a:r-861917400523736655&th=18d049524ba75b81&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ-Orft3LfGKWpSDknfch7nLv1zvj4DPm4D_2Rg944nY0SfZ2w0AUTcoUgAr4gWvoNCYoZN7hY8_0gtON_5NB8fwVgF_e6sBcAh8aqme4rxs9Z2FyzkVr7tUuro&disp=emb&realattid=18d04950fafa6611b7e1" style="width:auto; max-width:200px; height:auto; display:block; margin:0 auto;">'
+      + '<img src="https://github.com/charlesliu04/BaseWebsiteLaunch/blob/main/citylandscape.jpg?raw=true" style="width:auto; max-width:200px; height:auto; display:block; margin:0 auto;">'
       + '<figcaption style="text-align:center; font-size:smaller; color:#cccccc; margin-top:8px;">New York City always reminds me of the economy.</figcaption>'
       + '</figure>';
       break;
