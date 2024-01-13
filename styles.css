@@ -1,0 +1,460 @@
+/* General Reset */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: 'Inconsolata';
+    src: url('"C:\Website\Fonts\Inconsolata\static\Inconsolata-Regular.ttf"') format('truetype');
+  }
+  
+  /* Basic Styling */
+  body {
+    font-family: 'Inconsolata', monospace;
+    color: #ffffff;
+    background-color: rgb(0, 0, 0);
+    line-height: 2;
+  }
+  
+  #content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 5px;
+    font-size: 2em;
+  }
+  
+  p {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  #old-title {
+    color: #000000;
+  }
+
+  #links a {
+    color: #8f8f8f;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  #links a:hover { 
+    color: #8f8f8f;
+  }
+  
+  #dynamic-age {
+    font-size: 1.23em; 
+    margin-bottom: 1em; 
+  }
+  
+  #dynamic-age .menu-word1,
+  #dynamic-age .menu-word2 {
+    font-size: 1.1em; 
+  }
+  
+  p {
+    font-size: 1.1em;
+    margin-bottom: 1em; 
+    line-height: 1.8; 
+  }
+  
+  #business-inquiry {
+    margin-bottom: 0.1em; /* Adjust bottom margin for these elements */
+    font-size: 1.15em; /* Adjust font size for work status and business inquiry */
+  }
+
+
+#links {
+  margin-bottom:0.3em
+}
+
+#work-status {
+  margin-bottom: 0.1em
+}
+
+
+
+
+  #business-inquiry a {
+    color: #8f8f8f; /* Replace with the color you want */
+    text-decoration: none; /* Removes the underline */
+  }
+   /* Animated Underline For LinkedIn and Twitter */
+   .animated-underline {
+    text-decoration: none; /* Removes the default underline */
+    position: relative; /* Position relative to allow absolute positioning of pseudo-elements */
+    display: inline-block; /* Required for positioning the pseudo-element */
+  }
+  
+  .animated-underline::after {
+    content: '';
+    display: block;
+    margin: auto; /* This centers the pseudo-element */
+    height: 1.5px; /* Thickness of the underline */
+    width: 0%; /* Start with no width */
+    background: currentColor; /* Use the current color of the text */
+    transition: width 0.5s ease; /* Animation effect */
+    position: absolute;
+    bottom: 0px; /* Adjust the position of the underline */
+    transform: translateY(-4px); /* Push it down from the baseline; adjust as needed */
+    left: 0;
+    right: 0;
+  }
+  
+  .animated-underline:hover::after {
+    width: 100%; /* Full width on hover */
+  }
+  
+  /* Animated Underline */
+  #business-inquiry a {
+    color: #8f8f8f; /* Replace with the color you want */
+    text-decoration: none; /* Removes the default underline */
+    position: relative; /* Position relative to allow absolute positioning of pseudo-elements */
+    display: inline-block; /* Required for positioning the pseudo-element */
+  }
+  
+  #business-inquiry a::after {
+    content: '';
+    display: block;
+    margin: auto; /* This centers the pseudo-element */
+    height: 1.5px; /* Thickness of the underline */
+    width: 0%; /* Start with no width */
+    background: #8f8f8f; 
+    transition: width 0.5s ease; /* Animation effect */
+    position: absolute;
+    bottom: 0px; /* Adjust the position of the underline */
+    transform: translateY(-4px); /* Push it down from the baseline; adjust as needed */
+    left: 0;
+    right: 0;
+  }
+  
+  #business-inquiry a:hover::after {
+    width: 100%; /* Full width on hover */
+  }
+  
+
+
+
+/* Animated Introduction Code */
+  #animated-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: blinkCursor 0.75s steps(1) infinite;
+  }
+  
+  @keyframes moveUp {
+    to {
+      top: 7%;
+    }
+  }
+  
+  @keyframes blinkCursor {
+    from {
+      border-right-color: transparent;
+    }
+    to {
+      border-right-color: black;
+    }
+  }
+  
+#main-content {
+  display: none;
+}
+
+#fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: 10; 
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#animated-intro {
+  z-index: 11; 
+}
+
+#new-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+#typed-text {
+  font-size: 3em;
+}
+
+.typed-cursor {
+  opacity: 1;
+}
+
+.hide-cursor .typed-cursor {
+  display: none !important; 
+}
+
+#animated-intro {
+  border: none;
+  background: none;
+}
+
+/* Sentence moving fix */
+#dynamic-age span#age {
+  display: inline-block;
+  min-width: 124px; /* Increase the width until there is no overlap */
+  text-align: left;
+  font-family: 'Inconsolata', monospace; /* Monospaced font for consistent width */
+  font-size: 1em; /* Adjust the font size if necessary */
+}
+
+/* Stopping Vertical Scroll Fix */
+body, html {
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  height: 100vh; /* Set the height to the full viewport height */
+}
+
+
+
+
+
+/*Cursor Blink Introduction Animation */
+.typed-cursor {
+  opacity: 1;
+  animation: blink-animation 0.7s infinite;
+}
+
+@keyframes blink-animation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/*High light Drop Information */
+
+.menu-word {
+  color: #ff2727; /* Color for the clickable words */
+  cursor: pointer; /* Changes the cursor to indicate the word is clickable */
+}
+
+.menu-word3 {
+  color: #8f3fff; /* Color for the clickable words */
+  cursor: pointer; /* Changes the cursor to indicate the word is clickable */
+}
+
+.menu-word2 {
+  color: #3498db; /* Color for the clickable words */
+  cursor: pointer; /* Changes the cursor to indicate the word is clickable */
+}
+
+.menu-word1 {
+  color: #29f500; /* Color for the clickable words */
+  cursor: pointer; /* Changes the cursor to indicate the word is clickable */
+}
+
+.menu-word1 {
+  position: relative;
+  cursor: pointer;
+  display: inline-block; /* Necessary for the positioning of the pseudo-element */
+}
+
+
+.menu-word {
+  position: relative; /* Add this line to establish positioning context */
+  cursor: pointer;
+  /* ... other styles ... */
+}
+
+.menu-word::after {
+  content: '';
+  display: block;
+  height: 1.5px; /* Thickness of the underline */
+  width: 100%; /* Full width to maintain the starting point from the center */
+  background: #ff2727; 
+  transition: transform 0.5s ease; /* Animate the transform property */
+  position: absolute;
+  bottom: -3px; /* Adjust the position of the underline */
+  left: 50%; /* Start from the middle of the element */
+  transform: translateX(-50%) scaleX(0); /* Start with no scale */
+}
+
+.menu-word:hover::after,
+.menu-word:focus::after {
+  transform: translateX(-50%) scaleX(1); /* Scale to full size from the center */
+}
+
+
+
+.menu-word1::after {
+  content: '';
+  display: block;
+  height: 1.5px; /* Thickness of the underline */
+  width: 100%; /* Full width to maintain the starting point from the center */
+  background: #29f500; 
+  transition: transform 0.5s ease; /* Animate the transform property */
+  position: absolute;
+  bottom: 3px; /* Adjust the position of the underline */
+  left: 50%; /* Start from the middle of the element */
+  transform: translateX(-50%) scaleX(0); /* Start with no scale */
+}
+
+.menu-word1:hover::after,
+.menu-word1:focus::after {
+  transform: translateX(-50%) scaleX(1); /* Scale to full size from the center */
+}
+
+
+.menu-word3 {
+  position: relative; /* Add this line to establish positioning context */
+  cursor: pointer;
+  /* ... other styles ... */
+}
+
+.menu-word3::after {
+  content: '';
+  display: block;
+  height: 1.5px; /* Thickness of the underline */
+  width: 100%; /* Full width to maintain the starting point from the center */
+  background: #8f3fff; 
+  transition: transform 0.5s ease; /* Animate the transform property */
+  position: absolute;
+  bottom: -3px; /* Adjust the position of the underline */
+  left: 50%; /* Start from the middle of the element */
+  transform: translateX(-50%) scaleX(0); /* Start with no scale */
+}
+
+.menu-word3:hover::after,
+.menu-word3:focus::after {
+  transform: translateX(-50%) scaleX(1); /* Scale to full size from the center */
+}
+
+
+/* Initially hidden, with transition for opacity */
+.hidden-section {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease, visibility 0s linear 0.5s;
+  visibility: hidden;
+}
+
+/* Style for when a section is active */
+.active-section {
+  display: block; /* or 'flex', 'grid', etc., depending on your layout needs */
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease;
+}
+
+.menu-word2 {
+  position: relative; /* Add this line to establish positioning context */
+  cursor: pointer;
+  /* ... other styles ... */
+}
+
+.menu-word2::after {
+  content: '';
+  display: block;
+  height: 1.5px; /* Thickness of the underline */
+  width: 100%; /* Full width to maintain the starting point from the center */
+  background: #3498db; 
+  transition: transform 0.5s ease; /* Animate the transform property */
+  position: absolute;
+  bottom: -3px; /* Adjust the position of the underline */
+  left: 50%; /* Start from the middle of the element */
+  transform: translateX(-50%) scaleX(0); /* Start with no scale */
+}
+
+.menu-word2:hover::after,
+.menu-word2:focus::after {
+  transform: translateX(-50%) scaleX(1); /* Scale to full size from the center */
+}
+
+
+#globeContainer {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* Adjust based on the size of your globe */
+  height: 400px; /* Adjust based on the size of your globe */
+  z-index: -1;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+
+
+
+
+#popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85); 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  z-index: 1000;
+  padding-top: 10vh; /* Adjust this value to move the popup down from the top */
+  padding: 0 100px; 
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}
+
+
+#popup-content {
+  max-width: 750px; 
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px; 
+}
+
+
+
+#popup-container.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+#close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
