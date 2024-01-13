@@ -112,8 +112,8 @@ function determinePopupContent(clickedItem) {
     case 'accounting':
       content = '<p style="font-size: 18px;">I always percieved accounting as a dreadful monotonous subject. Yet, as I journeyed through my financial accounting class, a transformative realization dawned on me, akin to the lightbulb moment in cartoons: accounting is captivating. It might sound peculiar to some, but the allure of the numbers captivated me. The ability to dive into a companies backbone is like uncovering a hidden narrative, where every figure tells a part of a larger story about the company&apos;s performance, challenges, and potential.</p>'
       + '<figure>'
-      + '<img src="https://mail.google.com/mail/u/0?ui=2&ik=260c5ed639&attid=0.1&permmsgid=msg-a:r-8837038668488631084&th=18d049b18f45250c&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_OqLYGJ7GbfXWh3CFh-5JCGBkYAO20ebPkJRnWkmroWUy_4gqKbz1SnrLibOo_cz_SMpEJky4_VZ7fLQf_MtEZCDa5xRoLjiamFEwxMgIQG48vY6p73r7HUY8&disp=emb&realattid=18d049b08d187b78b831" style="width:auto; max-width:200px; height:auto; display:block; margin:0 auto;">'
-      + '<figcaption style="text-align:center; font-size:smaller; color:#cccccc; margin-top:8px;">Accounting reminds me of this dark hallway. No light until you finally see that that your assets = liabilities + stockholders equity.</figcaption>'
+      + '<img src="https://github.com/charlesliu04/BaseWebsiteLaunch/blob/main/accounting.png?raw=true" style="width:auto; max-width:200px; height:auto; display:block; margin:0 auto;">'
+      + '<figcaption style="text-align:center; font-size:smaller; color:#cccccc; margin-top:8px;"></figcaption>'
       + '</figure>';
       break;
 
@@ -121,8 +121,8 @@ function determinePopupContent(clickedItem) {
       case 'lifelong learner':
         content = '<p style="font-size: 18px;">I consider myself a dedicated lifelong learner, a trait I believe everyone should aspire to embody. While perfection may be an elusive goal, the journey towards it is transformative, constantly pushing us to evolve and improve. My commitment to becoming the best version of myself is rooted in a strive for knowledge, encompassing a wide array of subjects and skills. This curiosity led me to take on the challenge of coding my own website, a testament to my belief in continuous learning and self-growth.</p>'
           + '<figure>'  
-          + '<img src="https://mail.google.com/mail/u/0?ui=2&ik=260c5ed639&attid=0.1&permmsgid=msg-a:r5771807147761100318&th=18d00c7fed24441d&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ_qk-YCE7RXeuU9KP9BgUjb5RuRNs3XLCAiNYdae17HQ8UqWEUx2o7N3H4M6y7AFMQOXrR6Rz8Hz-CkJkqZYDkR8fqx9Tb3xztqupXIxAglKHCaK1xM42EGsfI&disp=emb&realattid=18d00c7e234be9689f31" style="width:auto; max-width:200px; height:auto; display:block; margin:0 auto;">'
-          + '<figcaption style="text-align:center; font-size:smaller; color:#cccccc; margin-top:8px;"> I read whenever I can. However, I&apos;ve recently shifted from solely consuming knowledge through reading to also producing, by writing, aligning with my newfound philosophy of balancing intake with output to add more value to society.</figcaption>'
+          + '<img src="https://github.com/charlesliu04/BaseWebsiteLaunch/blob/main/reading.jpg?raw=true" style="width:auto; max-width:200px; height:auto; display:block; margin:0 auto;">'
+         + '<figcaption style="text-align:center; font-size:smaller; color:#cccccc; margin-top:8px;"> I read whenever I can. However, I&apos;ve recently shifted from solely consuming knowledge through reading to also producing, by writing, aligning with my newfound philosophy of balancing intake with output to add more value to society.</figcaption>'
           + '</figure>';
         break;  
       
@@ -130,7 +130,7 @@ function determinePopupContent(clickedItem) {
     default:
       content = '<p style="font-size: 18px;">I see discipline as the pinnacle of self-respect and self-love, embodying the strength to prioritize long-term rewards over immediate desires. It showcases the depth of commitment to one&apos;s dreams, even on the most challenging days. I not only practice discipline but also advocate for its importance. My commitment to this principle has led me to be chosen as a speaker for Leadership Day at Boston College, where I will share insights on the vital role of discipline in effective leadership.</p>'
       + '<figure>'
-      + '<img src="https://mail.google.com/mail/u/0?ui=2&ik=260c5ed639&attid=0.1&permmsgid=msg-a:r-7985397301777047346&th=18d03aa18502a089&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ-ErVDLMBkkqEGsxRst8anAhACyMu5O_fLukRd5TVfuManetIFvkXMpAulbrFONVfAYWQGr_bGoT--8Zq5jAj1zE7H3cQMEaXIuiWVjVxuicV_jQDTw5CbCCGM&disp=emb&realattid=18d03a9f415208df5881" style="width:auto; max-width:200px; height:auto; display:block; margin:0 auto;">'
+      + '<img src="https://github.com/charlesliu04/BaseWebsiteLaunch/blob/main/running.jpg?raw=true" style="width:auto; max-width:200px; height:auto; display:block; margin:0 auto;">'
       + '<figcaption style="text-align:center; font-size:smaller; color:#cccccc; margin-top:8px;">Rainy day Boston Marathon Run</figcaption>'
       + '</figure>';
  
