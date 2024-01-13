@@ -1,4 +1,4 @@
-/* General Reset */
+
 
 *
 {
@@ -68,8 +68,8 @@
   }
   
   #business-inquiry {
-    margin-bottom: 0.1em; /* Adjust bottom margin for these elements */
-    font-size: 1.15em; /* Adjust font size for work status and business inquiry */
+    margin-bottom: 0.1em; 
+    font-size: 1.15em; 
   }
 
 
@@ -85,60 +85,60 @@
 
 
   #business-inquiry a {
-    color: #8f8f8f; /* Replace with the color you want */
-    text-decoration: none; /* Removes the underline */
+    color: #8f8f8f; 
+    text-decoration: none; 
   }
-   /* Animated Underline For LinkedIn and Twitter */
+  
    .animated-underline {
-    text-decoration: none; /* Removes the default underline */
-    position: relative; /* Position relative to allow absolute positioning of pseudo-elements */
-    display: inline-block; /* Required for positioning the pseudo-element */
+    text-decoration: none; 
+    position: relative; 
+    display: inline-block; 
   }
   
   .animated-underline::after {
     content: '';
     display: block;
-    margin: auto; /* This centers the pseudo-element */
-    height: 1.5px; /* Thickness of the underline */
-    width: 0%; /* Start with no width */
-    background: currentColor; /* Use the current color of the text */
-    transition: width 0.5s ease; /* Animation effect */
+    margin: auto; 
+    height: 1.5px; 
+    width: 0%;
+    background: currentColor; 
+    transition: width 0.5s ease;
     position: absolute;
-    bottom: 0px; /* Adjust the position of the underline */
-    transform: translateY(-4px); /* Push it down from the baseline; adjust as needed */
+    bottom: 0px; 
+    transform: translateY(-4px); 
     left: 0;
     right: 0;
   }
   
   .animated-underline:hover::after {
-    width: 100%; /* Full width on hover */
+    width: 100%; 
   }
   
-  /* Animated Underline */
+
   #business-inquiry a {
-    color: #8f8f8f; /* Replace with the color you want */
-    text-decoration: none; /* Removes the default underline */
-    position: relative; /* Position relative to allow absolute positioning of pseudo-elements */
-    display: inline-block; /* Required for positioning the pseudo-element */
+    color: #8f8f8f; 
+    text-decoration: none; 
+    position: relative; 
+    display: inline-block; 
   }
   
   #business-inquiry a::after {
     content: '';
     display: block;
-    margin: auto; /* This centers the pseudo-element */
-    height: 1.5px; /* Thickness of the underline */
-    width: 0%; /* Start with no width */
+    margin: auto; 
+    height: 1.5px; 
+    width: 0%; 
     background: #8f8f8f; 
-    transition: width 0.5s ease; /* Animation effect */
+    transition: width 0.5s ease; 
     position: absolute;
-    bottom: 0px; /* Adjust the position of the underline */
-    transform: translateY(-4px); /* Push it down from the baseline; adjust as needed */
+    bottom: 0px; 
+    transform: translateY(-4px); 
     left: 0;
     right: 0;
   }
   
   #business-inquiry a:hover::after {
-    width: 100%; /* Full width on hover */
+    width: 100%;
   }
   
 
@@ -223,16 +223,16 @@
 /* Sentence moving fix */
 #dynamic-age span#age {
   display: inline-block;
-  min-width: 124px; /* Increase the width until there is no overlap */
+  min-width: 124px; 
   text-align: left;
-  font-family: 'Inconsolata', monospace; /* Monospaced font for consistent width */
-  font-size: 1em; /* Adjust the font size if necessary */
+  font-family: 'Inconsolata', monospace;
+  font-size: 1em; 
 }
 
-/* Stopping Vertical Scroll Fix */
+
 body, html {
-  overflow-y: hidden; /* Prevent vertical scrolling */
-  height: 100vh; /* Set the height to the full viewport height */
+  overflow-y: hidden;
+  height: 100vh;
 }
 
 
@@ -254,54 +254,54 @@ body, html {
 /*High light Drop Information */
 
 .menu-word {
-  color: #ff2727; /* Color for the clickable words */
-  cursor: pointer; /* Changes the cursor to indicate the word is clickable */
+  color: #ff2727; 
+  cursor: pointer; 
 }
 
 .menu-word3 {
-  color: #8f3fff; /* Color for the clickable words */
-  cursor: pointer; /* Changes the cursor to indicate the word is clickable */
+  color: #8f3fff; 
+  cursor: pointer;
 }
 
 .menu-word2 {
-  color: #3498db; /* Color for the clickable words */
-  cursor: pointer; /* Changes the cursor to indicate the word is clickable */
+  color: #3498db; 
+  cursor: pointer; 
 }
 
 .menu-word1 {
-  color: #29f500; /* Color for the clickable words */
-  cursor: pointer; /* Changes the cursor to indicate the word is clickable */
+  color: #29f500;
+  cursor: pointer; 
 }
 
 .menu-word1 {
   position: relative;
   cursor: pointer;
-  display: inline-block; /* Necessary for the positioning of the pseudo-element */
+  display: inline-block;
 }
 
 
 .menu-word {
-  position: relative; /* Add this line to establish positioning context */
+  position: relative; 
   cursor: pointer;
-  /* ... other styles ... */
+
 }
 
 .menu-word::after {
   content: '';
   display: block;
-  height: 1.5px; /* Thickness of the underline */
-  width: 100%; /* Full width to maintain the starting point from the center */
+  height: 1.5px; 
+  width: 100%;
   background: #ff2727; 
-  transition: transform 0.5s ease; /* Animate the transform property */
+  transition: transform 0.5s ease;
   position: absolute;
-  bottom: -3px; /* Adjust the position of the underline */
-  left: 50%; /* Start from the middle of the element */
-  transform: translateX(-50%) scaleX(0); /* Start with no scale */
+  bottom: -3px; 
+  left: 50%;
+  transform: translateX(-50%) scaleX(0); 
 }
 
 .menu-word:hover::after,
 .menu-word:focus::after {
-  transform: translateX(-50%) scaleX(1); /* Scale to full size from the center */
+  transform: translateX(-50%) scaleX(1);
 }
 
 
@@ -309,48 +309,48 @@ body, html {
 .menu-word1::after {
   content: '';
   display: block;
-  height: 1.5px; /* Thickness of the underline */
-  width: 100%; /* Full width to maintain the starting point from the center */
+  height: 1.5px;
+  width: 100%; 
   background: #29f500; 
-  transition: transform 0.5s ease; /* Animate the transform property */
+  transition: transform 0.5s ease; 
   position: absolute;
-  bottom: 3px; /* Adjust the position of the underline */
-  left: 50%; /* Start from the middle of the element */
-  transform: translateX(-50%) scaleX(0); /* Start with no scale */
+  bottom: 3px;
+  left: 50%; 
+  transform: translateX(-50%) scaleX(0); 
 }
 
 .menu-word1:hover::after,
 .menu-word1:focus::after {
-  transform: translateX(-50%) scaleX(1); /* Scale to full size from the center */
+  transform: translateX(-50%) scaleX(1); 
 }
 
 
 .menu-word3 {
-  position: relative; /* Add this line to establish positioning context */
+  position: relative;
   cursor: pointer;
-  /* ... other styles ... */
+ 
 }
 
 .menu-word3::after {
   content: '';
   display: block;
-  height: 1.5px; /* Thickness of the underline */
-  width: 100%; /* Full width to maintain the starting point from the center */
+  height: 1.5px; 
+  width: 100%; 
   background: #8f3fff; 
-  transition: transform 0.5s ease; /* Animate the transform property */
+  transition: transform 0.5s ease;
   position: absolute;
-  bottom: -3px; /* Adjust the position of the underline */
-  left: 50%; /* Start from the middle of the element */
-  transform: translateX(-50%) scaleX(0); /* Start with no scale */
+  bottom: -3px; 
+  left: 50%;
+  transform: translateX(-50%) scaleX(0); 
 }
 
 .menu-word3:hover::after,
 .menu-word3:focus::after {
-  transform: translateX(-50%) scaleX(1); /* Scale to full size from the center */
+  transform: translateX(-50%) scaleX(1); 
 }
 
 
-/* Initially hidden, with transition for opacity */
+
 .hidden-section {
   display: none;
   opacity: 0;
@@ -360,34 +360,34 @@ body, html {
 
 /* Style for when a section is active */
 .active-section {
-  display: block; /* or 'flex', 'grid', etc., depending on your layout needs */
+  display: block; 
   opacity: 1;
   visibility: visible;
   transition: opacity 0.5s ease;
 }
 
 .menu-word2 {
-  position: relative; /* Add this line to establish positioning context */
+  position: relative; 
   cursor: pointer;
-  /* ... other styles ... */
+
 }
 
 .menu-word2::after {
   content: '';
   display: block;
-  height: 1.5px; /* Thickness of the underline */
-  width: 100%; /* Full width to maintain the starting point from the center */
+  height: 1.5px; 
+  width: 100%; 
   background: #3498db; 
-  transition: transform 0.5s ease; /* Animate the transform property */
+  transition: transform 0.5s ease;
   position: absolute;
-  bottom: -3px; /* Adjust the position of the underline */
-  left: 50%; /* Start from the middle of the element */
-  transform: translateX(-50%) scaleX(0); /* Start with no scale */
+  bottom: -3px; 
+  left: 50%; 
+  transform: translateX(-50%) scaleX(0); 
 }
 
 .menu-word2:hover::after,
 .menu-word2:focus::after {
-  transform: translateX(-50%) scaleX(1); /* Scale to full size from the center */
+  transform: translateX(-50%) scaleX(1); 
 }
 
 
@@ -396,15 +396,15 @@ body, html {
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px; /* Adjust based on the size of your globe */
-  height: 400px; /* Adjust based on the size of your globe */
+  width: 400px; 
+  height: 400px; 
   z-index: -1;
 }
 
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
 }
 
 
@@ -422,7 +422,7 @@ html, body {
   justify-content: center;
   align-items: center; 
   z-index: 1000;
-  padding-top: 10vh; /* Adjust this value to move the popup down from the top */
+  padding-top: 10vh; 
   padding: 0 100px; 
   transform: translateY(-100%);
   opacity: 0;
@@ -457,22 +457,4 @@ html, body {
   font-size: 20px;
 }
 
-/* Mobile-specific styles */
-@media only screen and (max-width: 600px) {
-  #popup-container {
-    width: 100%; /* Make popup full-width on small screens */
-    padding: 10px; /* Reduce padding on smaller screens */
-    box-sizing: border-box; /* Include padding in width */
-  }
-  
-  #popup-content {
-    max-width: 100%; /* Allow content to fill the container on small screens */
-    font-size: 16px; /* Increase font size for readability */
-  }
-  
-  #close-popup {
-    top: 15px; /* Reposition close button for easy access */
-    right: 15px;
-    font-size: 30px; /* Increase size for easy tapping */
-  }
-}
+
