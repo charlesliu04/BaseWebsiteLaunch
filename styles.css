@@ -457,4 +457,17 @@ html, body {
   font-size: 20px;
 }
 
-
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 16px; /* Smaller text for mobile */
+  }
+  
+  #popup-container {
+    padding-top: 20vh; /* Less vertical space on mobile */
+  }
+  
+  #popup-content {
+    max-width: 90%; /* Use a higher percentage of screen width on mobile */
+  }
+}
