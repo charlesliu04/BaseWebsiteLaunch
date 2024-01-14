@@ -464,18 +464,35 @@ html, body {
   font-size: 20px;
 }
 
-
-/* Mobile styles */
+/* Popup container for mobile */
 @media only screen and (max-width: 600px) {
-  p {
-    font-size: 16px; /* Smaller text for mobile */
-  }
-  
   #popup-container {
-    padding-top: 20vh; /* Less vertical space on mobile */
+    width: 90%; 
+    left: 5%;
+    right: 5%;
+    padding: 5%; 
+    box-sizing: border-box; 
   }
   
   #popup-content {
-    max-width: 90%; /* Use a higher percentage of screen width on mobile */
+    font-size: 16px; 
+    overflow-y: auto; 
+    text-align: left;
+    line-height: 1.4; 
+    max-height: 70vh; 
+  }
+  
+  #close-popup {
+    top: 1rem; 
+    right: 1rem;
+    font-size: 1.5rem; 
   }
 }
+
+
+#popup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
