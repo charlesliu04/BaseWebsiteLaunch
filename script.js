@@ -20,7 +20,7 @@ function calculateAge(birthDate) {
 const typed = new Typed('#typed-text', {
   strings: ['{Che Liu}'],
   typeSpeed: 30,
-  startDelay: 700, 
+  startDelay: 800, 
   loop: false,
   showCursor: true, 
   cursorChar: '|', 
