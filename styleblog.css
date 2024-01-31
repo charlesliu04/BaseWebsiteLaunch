@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Inconsolata';
+    src: url('https://github.com/charlesliu04/websiteblog/blob/main/Inconsolata-Regular.ttf') format('truetype');
+  }
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #6d6d6d;
+    color: #fff;
+    font-family: 'Inconsolata', monospace;
+}
+
+header {
+    padding: 40px;
+}
+
+#backLink {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; 
+    position: relative;
+    display: inline-block; 
+}
+
+.animated-underline::after {
+    content: '';
+    display: block;
+    margin: auto; 
+    height: 1.3px;
+    width: 0%; 
+    background: currentColor; 
+    transition: width 0.5s ease;
+    position: absolute;
+    bottom: -5px; 
+    transform: translateY(-4px); 
+    left: 0;
+    right: 0;
+}
+  
+.animated-underline:hover::after {
+    width: 100%;
+}
+
+#backButton {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+article {
+    max-width: 800px;
+    margin: auto;
+}
+
+
+
+#animated-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    animation: blinkCursor 0.75s steps(1) infinite;
+  }
+  
+  @keyframes moveUp {
+    to {
+      top: 7%;
+    }
+  }
+  
+  @keyframes blinkCursor {
+    from {
+      border-right-color: transparent;
+    }
+    to {
+      border-right-color: black;
+    }
+  }
+  
+#main-content {
+  display: none;
+}
+
+#fullscreen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  z-index: 10; 
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#animated-intro {
+  z-index: 11; 
+}
+
+#new-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+ 
+}
+#typed-text {
+  font-size: 3em;
+}
+
+.typed-cursor {
+  opacity: 1;
+}
+
+.hide-cursor .typed-cursor {
+  display: none !important; 
+}
+
+#animated-intro {
+  border: none;
+  background: none;
+}
+
+.typed-cursor {
+    opacity: 1;
+    animation: blink-animation 0.7s infinite;
+  }
+
+  @keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }  
