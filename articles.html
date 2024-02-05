@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styleblog.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+</head>
+<body>
+ 
+
+
+    <header>
+        <a href="index.html" id="backLink" class="animated-underline">&larr; Back</a>
+        <nav id="sidebar-menu">
+            <a href="blog.html" class="sidebar-link">Home</a>
+            <a href="books.html" class="sidebar-link">What am I reading right now?</a>
+            <a href="top10books.html" class="sidebar-link">My top 5 Books</a>
+            <a href="articles.html" class="sidebar-link">Past Articles</a>
+        </nav>
+
+    </header>
+
+  
+
+
+
+    
+    <main>
+        <article>
+            <h1>My Past Articles</h1>
+            <ul>
+                <li><a href="path_to_pdf_1.pdf" target="_blank">Action - Being the architect of your own action</a></li>
+              
+           
+            </ul>
+           
+        </article>
+    </main>
+
+    <script>
+        document.getElementById('backButton').addEventListener('click', function() {
+            window.location.href = 'index.html';
+        });
+    </script>
+
+
+
+</body>
+</html>
