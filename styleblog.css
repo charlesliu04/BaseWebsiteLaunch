@@ -204,3 +204,44 @@ ul li a:hover::before {
   transform: translateX(0); 
 }
 
+
+
+@media (max-width: 600px) { 
+  header {
+    padding-top: 120px; 
+  }
+  
+  #typed-text {
+    font-size: 5vw; 
+  }
+
+
+
+#typed-text {
+  font-size: 4vw; 
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+
+@media (max-width: 600px) { 
+  #typed-text {
+    font-size: 5vw; 
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) { 
+  #typed-text {
+    font-size: 4.5vw; 
+  }
+}
+
+@media (min-width: 1025px) { 
+  #typed-text {
+    font-size: 3vw; 
+    max-width: 70%;
+    margin: 0 auto; 
+  }
+}
+}
