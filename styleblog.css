@@ -163,7 +163,6 @@ background: none;
 
 
 
-
 ul {
   list-style-type: disc; 
   padding: 40px; 
@@ -175,33 +174,17 @@ ul li {
   margin-bottom: 10px; 
 }
 
-
 ul li a {
   color: white; 
   text-decoration: none; 
   display: inline-block; 
   position: relative; 
   overflow: hidden; 
+  transition: color 0.6s ease; 
 }
 
-
-ul li a::before {
-  content: ''; 
-  position: absolute;
-  bottom: -1px;
-  left: 50%; 
-  width: 0;
-  height: 1.3px; 
-  background-color: white; 
-  transition: all 0.6s ease;
-  transform: translateX(-50%); 
-}
-
-
-ul li a:hover::before {
-  width: 100%; 
-  left: 0; 
-  transform: translateX(0); 
+ul li a:hover {
+  color: #3f5f9e;
 }
 
 
