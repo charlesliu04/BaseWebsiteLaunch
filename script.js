@@ -112,7 +112,7 @@ function determinePopupContent(clickedItem) {
     case 'accounting':
       content = '<p style="font-size: 18px;">I always percieved accounting as a dreadful monotonous subject. Yet, as I journeyed through my financial accounting class, a transformative realization dawned on me, akin to the lightbulb moment in cartoons: accounting is captivating. It might sound peculiar to some, but the allure of the numbers captivated me. The ability to dive into a companies backbone is like uncovering a hidden narrative, where every figure tells a part of a larger story about the company&apos;s performance, challenges, and potential.</p>'
       + '<figure>'
-      + '<img src="https://github.com/charlesliu04/BaseWebsiteLaunch/blob/main/accounting.png?raw=true" style="width:auto; max-width:200px; height:auto; display:block; margin:0 auto;">'
+      + '<img src="https://github.com/charlesliu04/Website/blob/main/blogimages/sail.jpg?raw=true" style="width:auto; max-width:200px; height:auto; display:block; margin:0 auto;">'
       + '<figcaption style="text-align:center; font-size:smaller; color:#cccccc; margin-top:8px;"></figcaption>'
       + '</figure>';
       break;
