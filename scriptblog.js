@@ -1,4 +1,4 @@
-const typed = new Typed('#typed-text', {
+/* const typed = new Typed('#typed-text', {
     strings: ['{Silence - Che Liu}'],
     typeSpeed: 30,
     startDelay: 800, 
@@ -25,4 +25,18 @@ const typed = new Typed('#typed-text', {
       }, 700); 
     }
   });
-  
+  */
+
+const typed = new Typed('#typed-text', {
+    strings: ['Under Maintenance - Please Check Back Later'],
+    typeSpeed: 25,
+    startDelay: 800,
+    loop: false,
+    showCursor: true,
+    cursorChar: '|',
+    onComplete: (self) => {
+      setTimeout(() => {
+        self.cursor.style.display = 'none';
+      }, 700);
+    }
+  });
