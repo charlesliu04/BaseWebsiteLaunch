@@ -1,5 +1,5 @@
  const typed = new Typed('#typed-text', {
-    strings: ['{Silence - Che Liu}'],
+    strings: ['{Passion - Che Liu}'],
     typeSpeed: 30,
     startDelay: 800, 
     loop: false,
