@@ -1,4 +1,4 @@
-/* const typed = new Typed('#typed-text', {
+ const typed = new Typed('#typed-text', {
     strings: ['{Silence - Che Liu}'],
     typeSpeed: 30,
     startDelay: 800, 
@@ -25,8 +25,8 @@
       }, 700); 
     }
   });
-  */
-
+  
+/*
 const typed = new Typed('#typed-text', {
     strings: ['Under Maintenance - Please Check Back Later'],
     typeSpeed: 25,
@@ -40,3 +40,4 @@ const typed = new Typed('#typed-text', {
       }, 700);
     }
   });
+*/
