@@ -496,3 +496,16 @@ html, body {
   align-items: center;
 }
 
+
+#lumia-cofounder {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+  color: #ffffff; /* Default text color */
+}
+
+#lumia-cofounder span {
+  font-weight: bold;
+  color: #004aad; /* Dark blue color for Lumia */
+}
+
+
